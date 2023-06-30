@@ -19,7 +19,7 @@ jobs:
       - persist_to_workspace:
           root: ~/project
           paths:
-            - .
+            - ./test/specs/regression/*.js
 
   deploy: # this can be any name you choose
     executor: heroku/default
