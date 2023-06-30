@@ -10,8 +10,11 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: npm
+      - run: 
+          command: npm install @wdio/cli
+          name: Install wdio    
       - run:
-          command: npm run wdio
+          command: npm run test
           name:  Run tests
       - run:
           command:  npm run build
