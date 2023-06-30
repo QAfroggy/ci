@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio run ./wdio.conf.js",
+    "build": "npm run build",
     "wdio": "wdio run ./wdio.conf.js"
   },
   "keywords": [],
