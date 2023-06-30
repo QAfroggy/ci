@@ -14,6 +14,9 @@ jobs:
           command: npm install @wdio/cli
           name: Install wdio    
       - run:
+      - run:
+          command: npm install wdio-chromedriver-service --save-dev
+          name: Chrome service 
           command: npm run test
           name:  Run tests
       - run:
