@@ -17,6 +17,9 @@ jobs:
           name: Install Dependencies
           command: npm ci
       - run:
+          name: chromeDriver
+          command: npm install wdio-chromedriver-service --save-dev
+      - run:
           name: Run Tests
           command: npm run test
 
