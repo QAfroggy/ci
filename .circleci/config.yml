@@ -2,9 +2,8 @@ version: 2.1
 
 executors:
   node-executor:
-    shell:
-      - /bin/bash
-      - --login
+    machine:
+      image: ubuntu-2004:202106-01
 
 jobs:
   build-and-test:
@@ -20,10 +19,10 @@ jobs:
             node --version
       - run:
           name: Install dependencies
-          command: npm i
+          command: npm ci
       - run:
           name: Run tests
-          command: npm run test
+          command: npm test
 
 workflows:
   version: 2
