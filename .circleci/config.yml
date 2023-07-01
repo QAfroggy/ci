@@ -1,13 +1,9 @@
 version: 2.1
 
-executors:
-  node-executor:
-    machine:
-      image: ubuntu-2004:202106-01
-
 jobs:
   build-and-test:
-    executor: node-executor
+    machine:
+      image: circleci/classic:latest
     steps:
       - checkout
       - run:
@@ -19,10 +15,10 @@ jobs:
             node --version
       - run:
           name: Install dependencies
-          command: npm ci
+          command: npm i
       - run:
           name: Run tests
-          command: npm test
+          command: npm run test
 
 workflows:
   version: 2
