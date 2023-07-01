@@ -1,13 +1,15 @@
+import Home from '../../../utils/pages/home.js'
+
 describe("Elements", async()=>{
 
 before(async()=>{
-    await browser.url("/")
-})
+    Home.openPage();
+});
 
 it("Home page is visible", async()=>{
-    const page = await $('#b2indexPage');
+    const page = await $(Home.selectors.homePage);
     await expect(page).toBePresent();
-})
+});
 
 
-})
+});
