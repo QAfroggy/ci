@@ -3,8 +3,10 @@ version: 2.1
 executors:
   node-executor:
     docker:
-      - image: circleci/node:14
-
+      - image: jruby:9.3
+    steps:
+      - run: sudo apt-get update && sudo apt-get install -y git sudo tar
+      - checkout
 jobs:
   build-and-test:
     executor: node-executor
