@@ -2,22 +2,15 @@ version: 2.1
 
 jobs:
   build-and-test:
-    machine:
-      image: ubuntu:latest
+    docker:
+      - image: circleci/node:18
     steps:
       - checkout
       - run:
-          name: Install Node.js 18
-          command: |
-            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-            source ~/.nvm/nvm.sh
-            nvm install 18
-            node --version
-      - run:
-          name: Install dependencies
+          name: Install Dependencies
           command: npm i
       - run:
-          name: Run tests
+          name: Run Tests
           command: npm run test
 
 workflows:
@@ -25,5 +18,6 @@ workflows:
   build-and-test:
     jobs:
       - build-and-test
+
 
 
