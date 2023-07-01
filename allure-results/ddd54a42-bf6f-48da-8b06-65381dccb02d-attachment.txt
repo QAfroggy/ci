@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "[data-testid=\"header-xpb\"] div ul>li "
+}
