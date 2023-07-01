@@ -1,20 +1,26 @@
 version: 2.1
 
+executors:
+  node-executor:
+    shell:
+      - /bin/bash
+      - --login
+
 jobs:
   build-and-test:
-    docker:
-      - image: circleci/node:latest-browsers
+    executor: node-executor
     steps:
       - checkout
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
+      - run:
+          name: Install Node.js 18
+          command: |
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+            source ~/.nvm/nvm.sh
+            nvm install 18
+            node --version
       - run:
           name: Install dependencies
           command: npm i
-      - save_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
-          paths:
-            - ./node_modules
       - run:
           name: Run tests
           command: npm run test
