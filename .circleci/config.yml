@@ -1,8 +1,9 @@
 version: 2.1
+
 orbs:
   browser-tools: circleci/browser-tools@1.4.1
 jobs:
-  test:
+  build-and-test:
     docker:
       - image: cimg/node:13.12-browsers
     steps:
