@@ -9,9 +9,8 @@ jobs:
       - browser-tools/install-chrome
       - browser-tools/install-chromedriver
       - run:
-          command: |
-            google-chrome --version
-            chromedriver --version
+          command: google-chrome --version
+          command:  chromedriver --version
           name: Check install
           - run:
           name: Install Dependencies
