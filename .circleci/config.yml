@@ -1,19 +1,19 @@
-version: 2.1
-
+version: '2.1'
+orbs:
+  browser-tools: circleci/browser-tools@x.y
 jobs:
-  build-and-test:
+  test:
     docker:
-      - image: node:latest
+      - image: cimg/node:13.12-browsers
     steps:
-      - checkout
+      - browser-tools/install-chrome
+      - browser-tools/install-chromedriver
       - run:
-          name: Install Node.js 18
           command: |
-            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-            source ~/.nvm/nvm.sh
-            nvm install 18
-            node --version
-      - run:
+            google-chrome --version
+            chromedriver --version
+          name: Check install
+          - run:
           name: Install Dependencies
           command: npm ci
       - run:
@@ -22,12 +22,50 @@ jobs:
       - run:
           name: Run Tests
           command: npm run test
-
 workflows:
   version: 2
   build-and-test:
     jobs:
       - build-and-test
+
+
+workflows: null
+
+
+
+
+
+
+# version: 2.1
+
+# jobs:
+#   build-and-test:
+#     docker:
+#       - image: node:latest
+#     steps:
+#       - checkout
+#       - run:
+#           name: Install Node.js 18
+#           command: |
+#             curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+#             source ~/.nvm/nvm.sh
+#             nvm install 18
+#             node --version
+#       - run:
+#           name: Install Dependencies
+#           command: npm ci
+#       - run:
+#           name: chromeDriver
+#           command: npm i wdio-chromedriver-service
+#       - run:
+#           name: Run Tests
+#           command: npm run test
+
+# workflows:
+#   version: 2
+#   build-and-test:
+#     jobs:
+#       - build-and-test
 
 
 
