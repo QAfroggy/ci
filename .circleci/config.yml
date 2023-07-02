@@ -1,31 +1,24 @@
 version: 2.1
 
 orbs:
-  browser-tools: circleci/browser-tools@1.4.1
+  node: circleci/node@5.0.2
 jobs:
-  build-and-test:
-    docker:
-      - image: cimg/node:13.12-browsers
+  build_and_test: # this can be any name you choose
+    executor: node/default # use the default executor defined within the orb
     steps:
-      - browser-tools/install-chrome
-      - browser-tools/install-chromedriver
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm
       - run:
-          name: Check install
-          command:  chromedriver --version
-      - run:
-          name: Install Dependencies
-          command: npm ci
-      - run:
-          name: chromeDriver
-          command: npm i wdio-chromedriver-service
-      - run:
-          name: Run Tests
           command: npm run test
-workflows:
-  version: 2
-  build-and-test:
-    jobs:
-      - build-and-test
+          name: Run tests
+      - run:
+          command: npm run build
+          name: Build app
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - .
 
 
 
