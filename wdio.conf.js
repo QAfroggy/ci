@@ -112,6 +112,7 @@ exports.config = {
             outputDir: 'driver-logs', // overwrites the config.outputDir
             args: ['--silent'],
             port: 9515,
+            pollTimeout: 10000,
         }]
       ],
       // ...
