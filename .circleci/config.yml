@@ -1,23 +1,28 @@
 version: 2.1
 
-orbs:
-  node: circleci/node@5.0.2
 jobs:
-  build_and_test: # this can be any name you choose
-    executor: node/default # use the default executor defined within the orb
+  build-and-test:
+    docker:
+      - image: node:latest
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: npm
       - run:
+          name: Install Node.js 18
+          command: |
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+            source ~/.nvm/nvm.sh
+            nvm install 18
+            node --version
+      - run:
+          name: Install Dependencies
+          command: npm ci
+      - run:
+          name: chromeDriver
+          command: npm i wdio-chromedriver-service
+      - run:
+          name: Run Tests
           command: npm run test
-          name: Run tests
-      - run:
-          command: npm run build
-          name: Build app
-      - persist_to_workspace:
-          root: ~/project
-          paths:
+
 workflows:
   version: 2
   build-and-test:
@@ -32,36 +37,7 @@ workflows:
 
 
 
-# version: 2.1
 
-# jobs:
-#   build-and-test:
-#     docker:
-#       - image: node:latest
-#     steps:
-#       - checkout
-#       - run:
-#           name: Install Node.js 18
-#           command: |
-#             curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-#             source ~/.nvm/nvm.sh
-#             nvm install 18
-#             node --version
-#       - run:
-#           name: Install Dependencies
-#           command: npm ci
-#       - run:
-#           name: chromeDriver
-#           command: npm i wdio-chromedriver-service
-#       - run:
-#           name: Run Tests
-#           command: npm run test
-
-# workflows:
-#   version: 2
-#   build-and-test:
-#     jobs:
-#       - build-and-test
 
 
 
