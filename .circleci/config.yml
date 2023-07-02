@@ -9,10 +9,10 @@ jobs:
       - browser-tools/install-chrome
       - browser-tools/install-chromedriver
       - run:
+          name: Check install
           command: google-chrome --version
           command:  chromedriver --version
-          name: Check install
-          - run:
+      - run:
           name: Install Dependencies
           command: npm ci
       - run:
