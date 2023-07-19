@@ -1,0 +1,85 @@
+2023-07-19T20:52:25.699Z ERROR webdriver: Request failed with status 404 due to no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+2023-07-19T20:52:25.730Z ERROR webdriver: Request failed with status 404 due to no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+2023-07-19T20:52:25.733Z ERROR @wdio/utils:shim: no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+    at getErrorFromResponseBody (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/webdriver/build/utils.js:194:12)
+    at NodeJSRequest._request (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/webdriver/build/request/index.js:164:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Browser.wrapCommandFn (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/shim.js:72:29)
+    at Object.afterTest (C:\Users\Lenovo\Desktop\pro\cicd\/wdio.conf.js:249:13)
+    at async Promise.all (index 0)
+    at executeHooksWithArgsShim (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/shim.js:50:20)
+    at Context.testFrameworkFnWrapper (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:60:40)
+2023-07-19T20:52:25.761Z ERROR webdriver: Request failed with status 404 due to no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+2023-07-19T20:52:25.777Z ERROR webdriver: Request failed with status 404 due to no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+2023-07-19T20:52:25.778Z ERROR @wdio/utils:shim: no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+    at getErrorFromResponseBody (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/webdriver/build/utils.js:194:12)
+    at NodeJSRequest._request (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/webdriver/build/request/index.js:164:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Browser.wrapCommandFn (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/shim.js:72:29)
+    at Object.afterTest (C:\Users\Lenovo\Desktop\pro\cicd\/wdio.conf.js:249:13)
+    at async Promise.all (index 0)
+    at executeHooksWithArgsShim (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/shim.js:50:20)
+    at Context.testFrameworkFnWrapper (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:60:40)
+2023-07-19T20:52:25.797Z ERROR webdriver: Request failed with status 404 due to no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+2023-07-19T20:52:25.810Z ERROR webdriver: Request failed with status 404 due to no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+2023-07-19T20:52:25.810Z ERROR @wdio/utils:shim: no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+    at getErrorFromResponseBody (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/webdriver/build/utils.js:194:12)
+    at NodeJSRequest._request (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/webdriver/build/request/index.js:164:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Browser.wrapCommandFn (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/shim.js:72:29)
+    at Object.afterTest (C:\Users\Lenovo\Desktop\pro\cicd\/wdio.conf.js:249:13)
+    at async Promise.all (index 0)
+    at executeHooksWithArgsShim (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/shim.js:50:20)
+    at Context.testFrameworkFnWrapper (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:60:40)
+2023-07-19T20:52:25.827Z ERROR webdriver: Request failed with status 404 due to no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+2023-07-19T20:52:25.838Z ERROR webdriver: Request failed with status 404 due to no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+2023-07-19T20:52:25.838Z ERROR @wdio/utils:shim: no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+    at getErrorFromResponseBody (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/webdriver/build/utils.js:194:12)
+    at NodeJSRequest._request (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/webdriver/build/request/index.js:164:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Browser.wrapCommandFn (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/shim.js:72:29)
+    at Object.afterTest (C:\Users\Lenovo\Desktop\pro\cicd\/wdio.conf.js:249:13)
+    at async Promise.all (index 0)
+    at executeHooksWithArgsShim (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/shim.js:50:20)
+    at Context.testFrameworkFnWrapper (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:60:40)
+2023-07-19T20:52:25.851Z ERROR webdriver: Request failed with status 404 due to no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+2023-07-19T20:52:25.860Z ERROR webdriver: Request failed with status 404 due to no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+2023-07-19T20:52:25.861Z ERROR @wdio/utils:shim: no such window: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.199)
+    at getErrorFromResponseBody (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/webdriver/build/utils.js:194:12)
+    at NodeJSRequest._request (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/webdriver/build/request/index.js:164:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Browser.wrapCommandFn (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/shim.js:72:29)
+    at Object.afterTest (C:\Users\Lenovo\Desktop\pro\cicd\/wdio.conf.js:249:13)
+    at async Promise.all (index 0)
+    at executeHooksWithArgsShim (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/shim.js:50:20)
+    at Context.testFrameworkFnWrapper (file:///C:/Users/Lenovo/Desktop/pro/cicd/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:60:40)
