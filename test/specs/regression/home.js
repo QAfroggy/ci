@@ -1,15 +1,15 @@
-// import Home from '../../../utils/pages/home.js'
+import Home from '../../../utils/pages/home.js'
 
-// describe("Elements", async()=>{
+describe("Elements", async()=>{
 
-// before(async()=>{
-//     Home.openPage();
-// });
+before(async()=>{
+    Home.openPage();
+});
 
-// it("Home page is visible", async()=>{
-//     const page = await $(Home.selectors.homePage);
-//     await expect(page).toBePresent();
-// });
+it("Home page is visible", async()=>{
+    const page = await $(Home.selectors.homePage);
+    await expect(page).toBePresent();
+});
 // it("Logo  is visible", async()=>{
 //     const page = await $(Home.selectors.logo);
 //     await expect(page).toBePresent();
@@ -34,5 +34,5 @@
 
 
 
-// });
+});
 console.log("hello")
