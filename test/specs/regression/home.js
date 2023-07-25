@@ -8,8 +8,8 @@ before(async ()=>{
 
 it("Home page is visible", async ()=>{
    await console.log("hahaha")
-    // const page = await $(Home.selectors.homePage);
-    // await expect(page).toBePresent();
+    const page = await $(Home.selectors.homePage);
+    await expect(page).toBePresent();
 });
 // it("Logo  is visible", async()=>{
 //     const page = await $(Home.selectors.logo);
