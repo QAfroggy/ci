@@ -1,13 +1,13 @@
 import Home from '../../../utils/pages/home.js'
 
-describe("Elements", ()=>{
+describe("Elements", async ()=>{
 
-before(()=>{
+before(async ()=>{
     Home.openPage();
 });
 
-it("Home page is visible", ()=>{
-    console.log("hahaha")
+it("Home page is visible", async ()=>{
+   await console.log("hahaha")
     // const page = await $(Home.selectors.homePage);
     // await expect(page).toBePresent();
 });
