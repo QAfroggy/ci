@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio run ./wdio.conf.js",
-    
     "wdio": "wdio run ./wdio.conf.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@wdio/browser-runner": "^8.13.12",
     "@wdio/cli": "^8.11.2",
     "axios": "^1.4.0"
   },
