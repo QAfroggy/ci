@@ -55,13 +55,14 @@ exports.config = {
     capabilities: [{
         // capabilities for local browser web tests
         browserName: 'chrome',
-
+        //acceptInsercureCertes: true,
+        'goog:chromeOptions':{
+            args: ['--headless'], //'--disable-gpu', ' --disable-dev-shm-usege']
+          },
+          //
         // or "firefox", "microsoftedge", "safari"
     }],
-    'google:chromeOptions':{
-      args: ['--headless', '--disable-gpu', ' --disable-dev-shm-usege']
-    },
-    //
+  
     // ===================
     // Test Configurations
     // ===================
