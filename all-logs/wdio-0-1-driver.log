@@ -1,1 +1,1 @@
-{"level":"WARNING","message":"Unable to evaluate script: no such window: target window already closed\nfrom unknown error: web view not found\n","timestamp":1689799945873}
+{"level":"WARNING","message":"This version of ChromeDriver has not been tested with Chrome version 115.\n","timestamp":1692012153133}
